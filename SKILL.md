@@ -55,3 +55,13 @@ python3 scripts/cli.py stats
 ```bash
 python3 -m pytest tests/ -q
 ```
+
+## J-Space 增强（广播/记忆核心）
+
+基于 J-Space Cognition Suite v3.2 的广播协议增强记忆管理：
+- 权威核心（目标/实体/不变量/来源/版本/过期）
+- 广播前加载（连接定义属性/控制决策/解决冲突）
+- 多读（读取核心而非重建/标记冲突）
+- 原子更新（暂停依赖→写入→递增版本→识别依赖表面）
+
+详见 `references/j-space-broadcast.md`
