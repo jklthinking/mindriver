@@ -65,3 +65,13 @@ python3 -m pytest tests/ -q
 - 原子更新（暂停依赖→写入→递增版本→识别依赖表面）
 
 详见 `references/j-space-broadcast.md`
+
+## DNA Memory 融合（认知分型+记忆强化+语义搜索）
+
+基于 [DNA Memory](https://github.com/AIPMAndy/dna-memory) 跨客户端统一记忆层增强：
+- 认知分型8种（preference/fact/insight/decision/project_state/open_loop/workflow/error_lesson）
+- 记忆强化学习（useful反馈+0.1/misleading反馈-0.05）
+- 语义搜索（关键词提取→分别召回→去重→最多5条/2000 tokens）
+- 有界采集（只存结论，不存transcript）
+
+详见 `references/dna-memory-integration.md`
